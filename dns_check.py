@@ -27,7 +27,14 @@ class DNSChecker:
             timeout: Per-query timeout in seconds.
         """
         self.domain = domain
-        self.resolver = dns.resolver.Resolver()
+        try:
+            self.resolver = dns.resolver.Resolver()
+        except Exception:
+            self.resolver = dns.resolver.Resolver(configure=False)
+
+        if not self.resolver.nameservers:
+            self.resolver.nameservers = ["8.8.8.8", "1.1.1.1"]
+
         self.resolver.timeout = timeout
         self.resolver.lifetime = timeout
 
@@ -111,7 +118,6 @@ class DNSChecker:
             "PTR": [],
         }
 
-        # Reverse-resolve the first A record found, if any.
         if a_records:
             results["PTR"] = self.get_reverse_dns(a_records[0])
 

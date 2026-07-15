@@ -1,0 +1,21 @@
+2026-07-14 12:27:34 | INFO | Starting scan for https://example.com
+2026-07-14 12:27:35 | ERROR | Unhandled error scanning https://example.com: cannot open /etc/resolv.conf
+2026-07-15 20:50:13 | INFO | Starting scan for https://example.com
+2026-07-15 20:50:15 | INFO | DNS: reverse lookup failed for 104.20.23.154: The DNS query name does not exist: 154.23.20.104.in-addr.arpa.
+2026-07-15 20:50:17 | WARNING | GeoIP: RDAP lookup failed for 104.20.23.154: cannot open /etc/resolv.conf
+2026-07-15 20:50:18 | INFO | Scan complete for https://example.com | Score=0 | Verdict=LOW RISK
+2026-07-15 20:51:26 | INFO | Starting scan for https://youtube.com/shorts/SKulEHU3eDk?si=XgEDIkurL_lZ7sEE
+2026-07-15 20:51:31 | WARNING | GeoIP: RDAP lookup failed for 142.250.206.110: cannot open /etc/resolv.conf
+2026-07-15 20:51:38 | INFO | Scan complete for https://youtube.com/shorts/SKulEHU3eDk?si=XgEDIkurL_lZ7sEE | Score=0 | Verdict=LOW RISK
+2026-07-15 20:52:52 | INFO | Starting scan for https://forms.gle/XE8uCUm5uSCL7kRs7​
+2026-07-15 20:52:53 | INFO | DNS: reverse lookup failed for 199.36.158.100: The DNS query name does not exist: 100.158.36.199.in-addr.arpa.
+2026-07-15 20:52:54 | WARNING | WHOIS lookup failed for forms.gle: Whois command returned no output
+2026-07-15 20:52:54 | WARNING | GeoIP: RDAP lookup failed for 199.36.158.100: cannot open /etc/resolv.conf
+2026-07-15 20:53:00 | INFO | Scan complete for https://forms.gle/XE8uCUm5uSCL7kRs7​ | Score=0 | Verdict=LOW RISK
+2026-07-15 20:54:39 | INFO | Starting scan for http://neverssl.com
+2026-07-15 20:55:02 | WARNING | GeoIP: RDAP lookup failed for 34.223.124.45: cannot open /etc/resolv.conf
+2026-07-15 20:55:03 | INFO | Scan complete for http://neverssl.com | Score=10 | Verdict=LOW RISK
+2026-07-15 21:02:11 | INFO | Starting scan for https://share.google/XwbKNyeOLDPcKuTaV
+2026-07-15 21:02:14 | INFO | DNS: reverse lookup failed for 104.18.188.234: The DNS query name does not exist: 234.188.18.104.in-addr.arpa.
+2026-07-15 21:02:16 | WARNING | GeoIP: RDAP lookup failed for 104.18.189.234: cannot open /etc/resolv.conf
+2026-07-15 21:02:17 | INFO | Scan complete for https://share.google/XwbKNyeOLDPcKuTaV | Score=35 | Verdict=MEDIUM RISK
